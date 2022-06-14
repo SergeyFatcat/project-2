@@ -1,0 +1,44 @@
+/*section-1*/
+
+.section-1 {
+	min-height: 707px;
+	background-image: url(../img/s1bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 192px 0 0 0;
+
+	&__container {
+		padding: 0 0 0 44px;
+	}
+
+	&__title {
+		max-width: 524px;
+		font-size: 40px;
+		line-height: 53px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin: 0 0 19px 0;
+
+		span {
+			color: #E3B873;
+		}
+	}
+
+	&__text {
+		max-width: 524px;
+		font-size: 22px;
+		line-height: 36px;
+		color: #FFFFFF;
+		margin: 0 0 23px 0;
+	}
+
+	&__button {
+		width: 207px;
+		padding: 18px 0 17px 0;
+		font-style: italic;
+		font-size: 11px;
+		line-height: 15px;
+		margin: 0 20px 0 0;
+	}
+}
