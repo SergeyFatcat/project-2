@@ -281,6 +281,19 @@ body {
   line-height: 15px;
 }
 
+@media screen and (max-width: 960px) {
+  .header__phone {
+    -ms-flex-preferred-size: 190px;
+        flex-basis: 190px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__phone-button {
+    display: none;
+  }
+}
+
 /*section-1*/
 .section-1 {
   min-height: 707px;
@@ -327,6 +340,208 @@ body {
 
 /*section-2*/
 .section-2 {
-  height: 1074px;
+  min-height: 1074px;
   background-color: #131313;
+  padding: 105px 10px 406px 10px;
+}
+
+.section-2__container {
+  max-width: 1171px;
+}
+
+.section-2__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 1171px;
+  margin-bottom: 46px;
+}
+
+.section-2__tabs-list {
+  -ms-flex-preferred-size: 58%;
+      flex-basis: 58%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section-2__tabs-item {
+  font-family: 'Yeseva One', cursive;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.section-2__tabs-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.section-2__tabs-item.active {
+  color: #E3B873;
+  border-bottom: solid 1px #E3B873;
+  padding-bottom: 4px;
+}
+
+.section-2__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2__info {
+  -ms-flex-preferred-size: 492px;
+      flex-basis: 492px;
+  padding-right: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-2__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 180px;
+      flex-basis: 180px;
+}
+
+.section-2__title {
+  font-family: 'Yeseva One';
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.section-2__text {
+  font-size: 14px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.section-2__details {
+  max-width: 403px;
+  padding-bottom: 17px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 190px 1fr;
+      grid-template-columns: 190px 1fr;
+  grid-row-gap: 32px;
+}
+
+.section-2__details-box {
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-2__details-title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin-bottom: 9px;
+}
+
+.section-2__details-text {
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.section-2__img {
+  -ms-flex-preferred-size: 679px;
+      flex-basis: 679px;
+  max-width: 679px;
+  height: 482px;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.section-2__img img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.section-2__arrows {
+  margin-bottom: -6px;
+}
+
+.section-2__arrows button {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  padding: 0;
+}
+
+.section-2__arrows .arrow-left {
+  margin-right: 26px;
+}
+
+.section-2__arrows .disk {
+  fill-opacity: 0.3;
+  margin-right: 15px;
+}
+
+.section-2__arrows .disk.active {
+  fill-opacity: 1;
+}
+
+.section-2__arrows .arrow-right {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 1260px) {
+  .section-2__tabs-item:not(:last-child) {
+    margin-right: calc(12vw - 100px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .section-2__tabs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-2__tabs-list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
