@@ -100,8 +100,9 @@
 		padding-bottom: 17px;
 		display: grid;
 		grid-template-rows: 1fr 1fr;
-		grid-template-columns: 190px 1fr;
+		grid-template-columns: 150px 175px;
 		grid-row-gap: 32px;
+		grid-column-gap: 40px;
 
 		&-box {
 			justify-items: start;
@@ -144,8 +145,9 @@
 		object-position: center center;
 
 		img {
-			height: 100%;
-			object-fit: contain;
+			width: 679px;
+			height: 482px;
+			object-fit: cover;
 			object-position: center center;
 		}
 	}

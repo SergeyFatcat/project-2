@@ -48,3 +48,40 @@ body {
 	line-height: 23px;
 	color: #363636;
 }
+
+
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.db {
+	display: block;
+}
+
+.flex {
+	display: flex;
+}
+
+.jcsb {
+	justify-content: space-between;
+}
+
+.jcc {
+	justify-content: center;
+}
+
+.jcsa {
+	justify-content: space-around;
+}
+
+.jcse {
+	justify-content: space-evenly;
+}
+
+.aic {
+	align-items: center;
+}
