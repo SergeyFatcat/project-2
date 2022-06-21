@@ -1,9 +1,9 @@
 /*section-2*/
 
 .section-2 {
-	min-height: 1074px;
+	min-height: 750px;
 	background-color: #131313;
-	padding: 105px 10px 406px 10px;
+	padding: 105px 10px 416px 10px;
 }
 
 .section-2 {
@@ -36,6 +36,7 @@
 			text-transform: uppercase;
 			color: rgba(255, 255, 255, 0.3);
 			flex-shrink: 0;
+			cursor: pointer;
 
 			&:not(:last-child) {
 				margin-right: 60px;
