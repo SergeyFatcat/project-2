@@ -140,10 +140,11 @@
 	&__img {
 		flex-basis: 679px;
 		max-width: 679px;
-		height: 482px;
+		height: 100%;
 		overflow: hidden;
-		object-fit: contain;
-		object-position: center center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		img {
 			width: 679px;

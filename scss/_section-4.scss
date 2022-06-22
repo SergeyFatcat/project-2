@@ -1,0 +1,94 @@
+.section-4 {
+
+	&__container {
+		max-width: 1236px;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #181818;
+		margin-bottom: 13px;
+	}
+
+	&__icon {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 31px;
+	}
+
+	&__content {
+		display: flex;
+		margin: 0 -15px;
+	}
+}
+
+.ditails-s4 {
+	width: 452px;
+	padding: 0 15px 0 15px;
+	position: relative;
+	// border: #E3B873 solid 1px;
+
+	&__img {
+		// width: 392px;
+		height: 421px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+
+	}
+
+	&__text {
+		padding: 23px 10px 45px 42px;
+		background: #FFFFFF;
+		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+		width: calc(100% - 60px);
+		// margin: 0 34px 0 34px;
+		// position: absolute;
+		// top: 294px;
+		position: relative;
+		bottom: 128px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__title {
+		font-family: 'Yeseva One';
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 25px;
+		color: #363636;
+		margin: 0 0 8px -7px;
+	}
+
+	&__list {
+		font-size: 13px;
+		line-height: 26px;
+		color: #959595;
+		list-style-type: disc;
+	}
+
+	&__list-item {}
+
+	&__price {
+		padding: 14px 20px;
+		background: #E3B873;
+		box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+		font-family: 'Yeseva One';
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		position: absolute;
+		left: 0;
+		bottom: -25px;
+	}
+}
