@@ -1,4 +1,5 @@
 .section-4 {
+	padding: 0 15px 239px 0;
 
 	&__container {
 		max-width: 1236px;
@@ -26,10 +27,12 @@
 }
 
 .ditails-s4 {
-	width: 452px;
+	flex-basis: 452px;
 	padding: 0 15px 0 15px;
-	position: relative;
 	// border: #E3B873 solid 1px;
+	display: grid;
+	grid-template-rows: 294px 160px minmax(100px, auto) 27px minmax(27px, auto);
+	grid-template-columns: 31fr 228fr 100fr 31fr;
 
 	&__img {
 		// width: 392px;
@@ -38,33 +41,28 @@
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+		grid-row: 1/3;
+		grid-column: 1/5;
 
 		img {
 			width: 100%;
 			object-fit: contain;
 		}
-
 	}
 
 	&__text {
 		padding: 23px 10px 45px 42px;
 		background: #FFFFFF;
 		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-		width: calc(100% - 60px);
-		// margin: 0 34px 0 34px;
-		// position: absolute;
-		// top: 294px;
-		position: relative;
-		bottom: 128px;
-		left: 50%;
-		transform: translateX(-50%);
+		grid-row: 2/5;
+		grid-column: 2/4;
 	}
 
 	&__title {
 		font-family: 'Yeseva One';
 		font-size: 18px;
-		font-weight: 700;
 		line-height: 25px;
+		// letter-spacing: 1px;
 		color: #363636;
 		margin: 0 0 8px -7px;
 	}
@@ -79,7 +77,8 @@
 	&__list-item {}
 
 	&__price {
-		padding: 14px 20px;
+		text-align: center;
+		padding: 14px 0;
 		background: #E3B873;
 		box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 		font-family: 'Yeseva One';
@@ -87,8 +86,178 @@
 		line-height: 25px;
 		text-transform: uppercase;
 		color: #FFFFFF;
-		position: absolute;
-		left: 0;
-		bottom: -25px;
+		grid-row: 4/6;
+		grid-column: 2/3;
+	}
+}
+
+.section-4 {
+
+	&__request {
+		margin-top: 230px;
+		background-image: url(../img/image6.1.png);
+		background-repeat: no-repeat;
+		background-position: left bottom;
+	}
+
+	&__request-container {
+		max-width: 1258px;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 35px;
+	}
+
+	&__request-info {
+		padding-top: 5px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__request-info-center {
+		flex-basis: 400px;
+		height: 490px;
+		padding-bottom: 3px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__request-item {
+		padding-left: 18px;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		line-height: 19px;
+		color: #363636;
+	}
+
+	&__request-item-text {
+		margin-left: 8px;
+	}
+
+	&__request-form {
+		flex-basis: 509px;
+		height: 509px;
+		padding: 27px 49px 27px 51px;
+		background: #131313;
+		box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__request-form-title {
+		max-width: 300px;
+		align-self: center;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 36px;
+	}
+
+	&__form-label {
+		font-size: 13px;
+		line-height: 21px;
+		color: rgba(255, 255, 255, 0.5);
+		margin-bottom: 51px;
+	}
+
+	&__form-input {
+		background: transparent;
+
+		&::placeholder {
+			font-size: 14px;
+			line-height: 23px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__form-checkbox {
+		margin: -35px 0 36px 0;
+	}
+
+	&__form-checkbox-area {}
+
+	&__form-checkbox-label {
+		font-size: 14px;
+		line-height: 163.68%;
+		color: #FFFFFF;
+	}
+
+	&__form-submit {
+		text-align: center;
+		align-self: flex-end;
+		width: 213px;
+		height: 51px;
+	}
+}
+
+
+.round-number {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #E3B873;
+	border: 8px solid #FFFFFF;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+	font-family: 'Yeseva One';
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+.section-4 {
+
+
+
+	&__request-bottom {
+		padding-top: 5px;
+	}
+
+
+
+	&__request-bottom-container {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+
+
+	&__request-bottom-right {
+		flex-basis: 475px;
+		display: flex;
+	}
+
+
+
+	&__request-bottom-icon {
+		width: 72px;
+		height: 72px;
+		border-radius: 50%;
+		background: #E3B873;
+		box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+	&__request-bottom-text {
+		display: flex;
+		align-items: center;
+		max-width: 250px;
+		font-size: 18px;
+		line-height: 26px;
+		color: #E3B873;
+		text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+		margin-left: 25px;
 	}
 }
