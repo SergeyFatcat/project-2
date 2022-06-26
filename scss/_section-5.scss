@@ -1,7 +1,10 @@
+/*Section-5*/
+
 .section-5 {
 	background-image: url(../img/s5bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 0 20px;
 
 	&__container {
 		max-width: 1240px;
