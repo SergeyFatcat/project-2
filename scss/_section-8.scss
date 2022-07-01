@@ -1,0 +1,57 @@
+/*Section-8*/
+.section-8 {
+
+	padding: 275px 20px 50px 20px;
+	background-image: url(../img/image7.2.jpg);
+
+	&__contact-buttons {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 26px;
+	}
+
+	&__contact-button {
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		background-color: #E3B873;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 15px;
+	}
+
+	&__map {
+		max-width: 890px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.main-adress {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #E3B873;
+	margin-bottom: 26px;
+}
+
+.main-tel {
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #E3B873;
+}

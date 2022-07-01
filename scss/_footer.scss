@@ -1,0 +1,83 @@
+/*footer*/
+.footer {
+	height: 83px;
+	padding: 5px 0 0 0;
+	background-color: #131313;
+
+	&__container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		font-size: 11px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #E3B873;
+		padding: 0 20px 0 3px;
+	}
+
+	&__nav {
+		flex-basis: 600px;
+		padding: 0 5px 0 12px;
+		flex-shrink: 2;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+
+		&-link {
+			text-decoration: none;
+			font-size: 11px;
+			line-height: 15px;
+			color: #FFFFFF;
+			padding: 0 5px;
+
+			&.active {
+				color: #E3B873;
+			}
+		}
+	}
+
+	&__phone {
+		flex-basis: 317px;
+		// flex-shrink: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 2px 0 10px;
+		// border: #E3B873 1px solid;
+
+		&-link {
+			flex-shrink: 0;
+			font-size: 11px;
+			line-height: 15px;
+			color: #E3B873;
+			margin-right: 5px;
+		}
+
+		&-button {
+			flex: 0 1 161px;
+			padding: 13px 3px 9px 3px;
+			font-style: italic;
+			font-size: 11px;
+			line-height: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.footer__phone {
+		flex-basis: 190px;
+		justify-content: flex-end;
+		// border: #E3B873 1px solid;
+	}
+
+	.footer__phone-button {
+		display: none;
+	}
+}

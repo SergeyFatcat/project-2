@@ -1,0 +1,72 @@
+/*Section-7*/
+.section-7 {
+	max-width: 883px;
+	margin: -223px auto;
+	background-color: #131313;
+	padding: 34px 20px 34px 20px;
+
+	&__inner {
+		max-width: 517px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 46px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-top {
+		display: flex;
+		justify-content: space-between;
+		// border: solid 1px wheat;
+
+		input {
+			width: 231px;
+		}
+	}
+
+	&__form-label {
+		display: block;
+		font-size: 13px;
+		line-height: 21px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	&__form-input {
+		display: block;
+		background-color: transparent;
+		margin-bottom: 49px;
+
+		::placeholder {
+			font-size: 14px;
+			line-height: 23px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__form-checkbox-area {}
+
+	&__form-checkbox-label {
+		align-self: center;
+		font-size: 14px;
+		line-height: 163.68%;
+		color: #FFFFFF;
+		margin-bottom: 50px;
+	}
+
+	&__form-submit {
+		align-self: center;
+		width: 200px;
+		height: 51px;
+		text-align: center;
+	}
+}
