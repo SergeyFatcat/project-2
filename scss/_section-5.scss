@@ -4,7 +4,7 @@
 	background-image: url(../img/s5bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 0 20px;
+	padding: 0 20px 0 20px;
 
 	&__container {
 		max-width: 1240px;
@@ -51,7 +51,6 @@
 		grid-gap: 40px;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 30px 203px 317px 268px 40px;
-		// border: 1px solid brown;
 		margin: -110px 0 -43px 0;
 	}
 
@@ -59,7 +58,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// border: 1px solid brown;
 		overflow: hidden;
 
 		&:nth-child(1) {
@@ -86,6 +84,44 @@
 		img {
 			height: 100%;
 			object-fit: cover;
+		}
+	}
+}
+
+.section-5-m {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.section-5 {
+		display: none;
+	}
+
+	.section-5-m {
+		display: block;
+		padding: 0 20px 0 20px;
+		margin: 0 auto -34vw auto;
+
+		&__title {
+			font-size: 22px;
+			line-height: 138.6%;
+			text-align: center;
+			text-transform: uppercase;
+			color: #E3B873;
+			margin-bottom: 50px;
+		}
+
+		&__img {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 67vw;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }

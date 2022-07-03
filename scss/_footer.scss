@@ -45,12 +45,10 @@
 
 	&__phone {
 		flex-basis: 317px;
-		// flex-shrink: 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 2px 0 10px;
-		// border: #E3B873 1px solid;
 
 		&-link {
 			flex-shrink: 0;
@@ -74,10 +72,15 @@
 	.footer__phone {
 		flex-basis: 190px;
 		justify-content: flex-end;
-		// border: #E3B873 1px solid;
 	}
 
 	.footer__phone-button {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.footer {
 		display: none;
 	}
 }

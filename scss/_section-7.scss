@@ -6,8 +6,9 @@
 	padding: 34px 20px 34px 20px;
 
 	&__inner {
-		max-width: 517px;
+		max-width: 535px;
 		margin: 0 auto;
+		padding-left: 20px;
 	}
 
 	&__title {
@@ -27,7 +28,6 @@
 	&__form-top {
 		display: flex;
 		justify-content: space-between;
-		// border: solid 1px wheat;
 
 		input {
 			width: 231px;
@@ -39,21 +39,22 @@
 		font-size: 13px;
 		line-height: 21px;
 		color: rgba(255, 255, 255, 0.5);
+
 	}
 
 	&__form-input {
 		display: block;
 		background-color: transparent;
-		margin-bottom: 49px;
+		margin-bottom: 44px;
+		border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+		width: 100%;
 
-		::placeholder {
+		&::placeholder {
 			font-size: 14px;
 			line-height: 23px;
 			color: #FFFFFF;
 		}
 	}
-
-	&__form-checkbox-area {}
 
 	&__form-checkbox-label {
 		align-self: center;
@@ -68,5 +69,24 @@
 		width: 200px;
 		height: 51px;
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.section-7 {
+		margin: 0 auto;
+		padding-top: calc(85px + 34vw);
+
+		&__form-top {
+			flex-direction: column;
+
+			input {
+				width: 100%;
+			}
+		}
+
+		&__form-submit {
+			width: 100%;
+		}
 	}
 }

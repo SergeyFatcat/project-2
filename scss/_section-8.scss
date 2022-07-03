@@ -1,13 +1,13 @@
 /*Section-8*/
 .section-8 {
 
-	padding: 275px 20px 50px 20px;
+	padding: 270px 20px 90px 20px;
 	background-image: url(../img/image7.2.jpg);
 
 	&__contact-buttons {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 26px;
+		margin-bottom: 40px;
 	}
 
 	&__contact-button {
@@ -20,11 +20,11 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		margin: 0 15px;
+		margin: 0 8px;
 	}
 
 	&__map {
-		max-width: 890px;
+		max-width: 930px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
@@ -54,4 +54,10 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #E3B873;
+}
+
+@media screen and (max-width: 800px) {
+	.section-8 {
+		padding-top: 50px;
+	}
 }

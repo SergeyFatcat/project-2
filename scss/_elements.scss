@@ -9,7 +9,6 @@ body {
 .container {
 	max-width: 1260px;
 	margin: 0 auto;
-	// border: solid 1px yellow;
 }
 
 .button {
@@ -30,7 +29,6 @@ body {
 
 .title {
 	font-family: 'Yeseva One', cursive;
-
 	text-transform: uppercase;
 }
 
@@ -96,8 +94,33 @@ body {
 	}
 }
 
+.btn-prev {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #E3B873;
+	background-image: url(../img/bpbg.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+}
 
-
+.btn-next {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #E3B873;
+	background-image: url(../img/bnbg.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+}
 
 
 
@@ -109,42 +132,44 @@ button:hover {
 	cursor: pointer;
 }
 
-.db {
-	display: block;
-}
 
-.df {
-	display: flex;
-}
 
-.jcsb {
-	justify-content: space-between;
-}
+// .db {
+// 	display: block;
+// }
 
-.jcc {
-	justify-content: center;
-}
+// .df {
+// 	display: flex;
+// }
 
-.jcsa {
-	justify-content: space-around;
-}
+// .jcsb {
+// 	justify-content: space-between;
+// }
 
-.jcse {
-	justify-content: space-evenly;
-}
+// .jcc {
+// 	justify-content: center;
+// }
 
-.aic {
-	align-items: center;
-}
+// .jcsa {
+// 	justify-content: space-around;
+// }
 
-.tac {
-	text-align: center;
-}
+// .jcse {
+// 	justify-content: space-evenly;
+// }
 
-.mxa {
-	margin: 0 auto;
-}
+// .aic {
+// 	align-items: center;
+// }
 
-.mla {
-	margin-left: auto;
-}
+// .tac {
+// 	text-align: center;
+// }
+
+// .mxa {
+// 	margin: 0 auto;
+// }
+
+// .mla {
+// 	margin-left: auto;
+// }

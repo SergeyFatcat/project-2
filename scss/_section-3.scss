@@ -1,7 +1,7 @@
 /*section-3*/
 .section-3 {
 	margin-top: -328px;
-	padding: 0 0 142px 0;
+	padding: 0 20px 142px 20px;
 
 
 	&__title {
@@ -10,14 +10,12 @@
 		text-align: center;
 		text-transform: uppercase;
 		color: #FFFFFF;
-		// background-color: #131313;
 		margin-bottom: 12.7px
 	}
 
 	&__icon {
 		display: block;
 		margin: 0 auto 32.7px;
-		// background-color: #131313;
 	}
 
 	&__video {
@@ -29,7 +27,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 62.5px;
-		// border: solid #E3B873 1px;
 	}
 
 	&__video-img {
@@ -75,6 +72,10 @@
 
 	}
 
+	&__form-checkbox-m {
+		display: none;
+	}
+
 	&__form-submit {
 		width: 200px;
 		height: 51px;
@@ -84,7 +85,6 @@
 		margin: 0 auto;
 		max-width: 330px;
 		padding: 0 0 0 22px;
-		// border: solid #E3B873 1px;
 	}
 
 	&__form-checkbox-label {
@@ -108,4 +108,72 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 960px) {
+	.section-3 {
+		&__video {
+			width: 85.1vw;
+			height: 45.52vw;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.section-3 {
+		background-color: #131313;
+		padding-bottom: 0;
+
+
+		&__video {
+			background-color: #131313;
+		}
+
+		&__text {
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 11px;
+			line-height: 169.8%;
+			margin-bottom: 61px;
+		}
+
+		&__form-top {
+			flex-direction: column;
+			width: 100%;
+		}
+
+		&__form-label {
+			color: rgba(255, 255, 255, 0.5);
+			border-bottom: rgba(250, 250, 250, 0.3) solid 1px;
+			margin-bottom: 72px;
+		}
+
+		&__form-input {
+			width: 100%;
+			background-color: transparent;
+
+			&::placeholder {
+				color: #fff;
+			}
+		}
+
+		&__form-checkbox-m {
+			display: block;
+			margin-bottom: 62px;
+		}
+
+		&__form-checkbox-label-m {
+			color: #FFFFFF;
+		}
+
+		&__form-submit {
+			width: 100%;
+			margin-bottom: -27px;
+		}
+
+		&__form-checkbox {
+			display: none;
+		}
+	}
+
 }

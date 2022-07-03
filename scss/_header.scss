@@ -2,7 +2,7 @@
 
 .header {
 	height: 83px;
-	padding: 5px 0 0 0;
+	padding: 5px 20px 0 20px;
 	background-color: #131313;
 
 	&__container {
@@ -46,12 +46,10 @@
 
 	&__phone {
 		flex-basis: 317px;
-		// flex-shrink: 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 2px 0 10px;
-		// border: #E3B873 1px solid;
 
 		&-link {
 			flex-shrink: 0;
@@ -75,10 +73,15 @@
 	.header__phone {
 		flex-basis: 190px;
 		justify-content: flex-end;
-		// border: #E3B873 1px solid;
 	}
 
 	.header__phone-button {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.header__nav {
 		display: none;
 	}
 }

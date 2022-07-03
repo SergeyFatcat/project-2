@@ -1,7 +1,7 @@
 /*Section-4*/
 
 .section-4 {
-	padding: 0 15px 239px 0;
+	padding: 0 15px 239px 15px;
 
 	&__container {
 		max-width: 1236px;
@@ -31,13 +31,11 @@
 .ditails-s4 {
 	flex-basis: 452px;
 	padding: 0 15px 0 15px;
-	// border: #E3B873 solid 1px;
 	display: grid;
 	grid-template-rows: 294px 160px minmax(100px, auto) 27px minmax(27px, auto);
 	grid-template-columns: 31fr 228fr 100fr 31fr;
 
 	&__img {
-		// width: 392px;
 		height: 421px;
 		display: flex;
 		justify-content: center;
@@ -64,7 +62,6 @@
 		font-family: 'Yeseva One';
 		font-size: 18px;
 		line-height: 25px;
-		// letter-spacing: 1px;
 		color: #363636;
 		margin: 0 0 8px -7px;
 	}
@@ -75,8 +72,6 @@
 		color: #959595;
 		list-style-type: disc;
 	}
-
-	&__list-item {}
 
 	&__price {
 		text-align: center;
@@ -103,21 +98,21 @@
 	}
 
 	&__request-container {
-		max-width: 1258px;
+		max-width: 1245px;
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 35px;
 	}
 
 	&__request-info {
-		padding-top: 5px;
+		padding-top: 1px;
 		display: flex;
 		justify-content: center;
 	}
 
 	&__request-info-center {
-		flex-basis: 400px;
-		height: 490px;
+		flex-basis: 435px;
+		height: 495px;
 		padding-bottom: 3px;
 		display: flex;
 		flex-direction: column;
@@ -167,6 +162,8 @@
 
 	&__form-input {
 		background: transparent;
+		border-bottom: 1px solid rgba(254, 254, 254, 0.3);
+		width: 100%;
 
 		&::placeholder {
 			font-size: 14px;
@@ -178,8 +175,6 @@
 	&__form-checkbox {
 		margin: -35px 0 36px 0;
 	}
-
-	&__form-checkbox-area {}
 
 	&__form-checkbox-label {
 		font-size: 14px;
@@ -201,8 +196,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 55px;
-	height: 55px;
+	width: 58px;
+	height: 58px;
 	border-radius: 50%;
 	background-color: #E3B873;
 	border: 8px solid #FFFFFF;
@@ -220,7 +215,7 @@
 
 
 	&__request-bottom {
-		padding-top: 5px;
+		padding-top: 3px;
 	}
 
 
@@ -233,7 +228,7 @@
 
 
 	&__request-bottom-right {
-		flex-basis: 475px;
+		flex-basis: 485px;
 		display: flex;
 	}
 
@@ -261,5 +256,36 @@
 		color: #E3B873;
 		text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 		margin-left: 25px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.section-4 {
+		padding-top: 60px;
+
+		&__content {
+			flex-direction: column;
+		}
+
+		&__request {
+			display: none;
+		}
+
+		&__request-bottom {
+			display: none;
+		}
+	}
+
+
+	.ditails-s4 {
+		grid-template-columns: 0fr 258fr 100fr 31fr;
+		margin-bottom: 80px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.section-4 {
+		padding-bottom: 25px;
 	}
 }
